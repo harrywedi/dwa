@@ -78,16 +78,16 @@ WSGI_APPLICATION = 'DWA.wsgi.application'
 
 DATABASES = {
     'default': {
-        #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dwa',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'OPTIONS': {
-            'init_command': 'SET innodb_strict_mode=1',
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+		#'ENGINE': 'django.db.backends.mysql',
+		#'NAME': 'dwa',
+		#'USER': 'root',
+		#'PASSWORD': '',
+		# 'HOST': 'localhost',
+		# 'OPTIONS': {
+			#  'init_command': 'SET innodb_strict_mode=1',
+        #},
     }
 }
 
